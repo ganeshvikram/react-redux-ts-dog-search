@@ -159,7 +159,8 @@ export const HomePage = () => {
 
               <div>
                 <div className="flex flex-wrap gap-4 justify-center">
-                  {imageResults.map((result, index) => (
+                  {loading && `Finding Dogs Images...`}
+                  {!loading && imageResults.map((result, index) => (
                     <div
                       key={index}
                       className="w-40 h-40 rounded overflow-hidden shadow-lg bg-white"
