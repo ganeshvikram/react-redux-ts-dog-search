@@ -150,7 +150,7 @@ export const HomePage = () => {
 
 
           </div>
-          { (imageResults.length)  && <div className="py-10 min-h-screen bg-white pl-24 ">
+          { (imageResults.length>0)  && <div className="py-10 min-h-screen bg-white pl-24 ">
               <h1 className="text-3xl font-bold text-left mb-8 text-cyan-200-50 ">
                 <div className=" bg-pink-300 p-4">
                   <span > 🐶 {capitalizeFirstLetter(breedName)} Dogs Gallery</span> <span className="text-xl font-bold text-right md:float-right">Total pictures: <span className="font-semibold">{12}</span></span>
