@@ -39,9 +39,11 @@ export const fetchDogsSubBreeds = async( breed:string ) =>{
 
 export const fetchDogBreedimages = async(breed:string,subbreed:string,number:number) =>{
     try{
-        const res = await axios.get(`https://dog.ceo/api/breeds/${breed}/${subbreed}/images/random/${number}`,{headers});
-        console.log(res);
-        return res?.data;
+
+        let Url = (subbreed!='all')?breed+'/'+subbreed:breed;
+        
+        const res = await axios.get(`https://dog.ceo/api/breed/${Url}/images/random/${number}`,{headers});
+        return res?.data.message;
 
     }catch(err){
         if(err instanceof Error){
