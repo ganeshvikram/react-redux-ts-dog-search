@@ -74,6 +74,19 @@ export const HomePage = () => {
     <div>
       <main id="content">
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-gray-100 p-6 rounded-lg text-center max-w-xl mx-auto mt-10 shadow">
+          <p className="text-lg font-semibold   mb-4 italic ">
+            This is a Dog App built with React JS using the Dog API. 
+          </p>
+          <ul className="text-base space-y-1 font-mono ">
+            <li>The app uses:</li>
+            <li>ReactJS & TypeScript</li>
+            <li>Redux for State Management</li>
+            <li>Axios for fetching Data</li>
+            <li>Tailwind Components</li>
+            <li>Unit Tests With Jest & React Testing Library</li>
+          </ul>
+        </div>
           <div className={`py-10 min-h-screen min-w-[300px] bg-white ${imageResults.length ? 'float-left' : ''}`}>
 
 
